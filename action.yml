@@ -1,0 +1,21 @@
+name: "Upload Action"
+description: "Uploads a folder content to an ftp server using ssh"
+inputs:
+  host:
+    required: true
+  user:
+    required: true
+  ssh-key:
+    required: true
+  ssh-key-passphrase:
+    required: true
+  ssh-port:
+    required: true
+    default: "22"
+  destination-folder:
+    required: true
+  file-path:
+    required: true
+  runs:
+    using: "node16"
+    main: "index.js"
