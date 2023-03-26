@@ -16,6 +16,6 @@ inputs:
     required: true
   file-path:
     required: true
-  runs:
-    using: "node16"
-    main: "index.js"
+runs:
+  using: "node16"
+  main: "index.js"
